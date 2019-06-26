@@ -1,11 +1,14 @@
-<h1>Search for something</h1>
 <form>
-  <input [(ngModel)]="cardQuery" name="cardQuery" (keydown)="onKeydown($event)" />
+  <div class="form-group">
+    <input class="form-control"
+           name="cardQuery"
+           [(ngModel)]="cardQuery"
+           (keydown)="onKeydown($event)" />
+  </div>
 </form>
-<ul>
-  <li *ngFor="let card of cards$ | async">
-    <a href="#">
-      {{ card.name }}
-    </a>
+<br/>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let card of cards$ | async">
+    <mtg-card [card]="card"></mtg-card>
   </li>
 </ul>

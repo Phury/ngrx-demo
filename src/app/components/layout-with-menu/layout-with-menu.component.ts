@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './layout-with-menu.component.html'
 })
 export class LayoutWithMenuComponent implements OnInit {
+
   ngOnInit(): void {
   }
 

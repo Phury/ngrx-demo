@@ -1,1 +1,9 @@
 <h1>My collection</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm" *ngFor="let card of collection$ | async">
+      <mtg-card [card]="card"></mtg-card>
+    </div>
+  </div>
+</div>

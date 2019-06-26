@@ -1,0 +1,7 @@
+<div class="card">
+  <img [src]="card.image_uris.small" />
+  <div class="card-body">
+    <h5 class="card-title">{{ card.name }}</h5>
+    <button type="button" class="btn btn-secondary" (click)="removeFromCollection(card)">Remove</button>
+  </div>
+</div>

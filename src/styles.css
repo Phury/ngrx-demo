@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.nav-item-pill {
+  position: relative;
+}
+
+.nav-item-pill > .badge-pill {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+}

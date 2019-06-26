@@ -5,8 +5,8 @@ export class Card {
   name: string;
   lang: string;
   uri: string;
-  imageUris: {[key: string]: string};
-  manaCost: string;
+  image_uris: {[key: string]: string};
+  mana_cost: string;
   cmc: number;
   oracleText: string;
   power: string;

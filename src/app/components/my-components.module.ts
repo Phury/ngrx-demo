@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import {CommonModule} from '@angular/common';
 import { LayoutWithMenuComponent } from './layout-with-menu/layout-with-menu.component';
 
 @NgModule({
     imports: [
       RouterModule.forChild([]),
+      CommonModule,
     ],
     declarations: [
         LayoutWithMenuComponent
@@ -15,5 +17,5 @@ import { LayoutWithMenuComponent } from './layout-with-menu/layout-with-menu.com
     entryComponents: [
     ]
 })
-export class ComponentsModule {
+export class MyComponentsModule {
 }

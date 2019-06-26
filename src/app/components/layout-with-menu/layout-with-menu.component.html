@@ -1,3 +1,23 @@
-<h1>My awesome layout</h1>
-<router-outlet></router-outlet>
-
+<br/>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/screen/search" routerLinkActive="active">Search</a>
+    </li>
+    <li class="nav-item nav-item-pill">
+      <!--
+      <span *ngIf="(collection$ | async).length"
+            class="badge badge-pill badge-success" style="">
+        {{(collection$ | async).length}}
+      </span>
+      -->
+      <a class="nav-link" routerLink="/screen/collection" routerLinkActive="active">Collection</a>
+    </li>
+  </ul>
+  <br/>
+  <router-outlet></router-outlet>
+  <br/>
+  <footer>
+    @phatarhs
+  </footer>
+</div>

@@ -12,5 +12,5 @@ import {HttpClientModule} from '@angular/common/http';
     entryComponents: [
     ]
 })
-export class ServicesModule {
+export class MyServiceModule {
 }
